@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 * {
     box-sizing: border-box;
 }
 img :nth-child(1){
     
-   float: left;
-   display: inline;
+  float: inline-start;
+   /* display: inline; */
+   /* align-items:flex-start ; */
    
 }
 body {
@@ -22,16 +26,23 @@ body {
 header {
     background-color: rgb(69,69,69);
    vertical-align: middle;
-  padding: 10px;
-  
+  padding-right : 100px;
+  padding-left :0px;
+  font-family: 'Noto Sans', sans-serif;
+  padding-bottom: 40px ;
+  width: 100% ;
+  padding-top : 30px;
 }
 
 
 header nav a{
+    float: right;
     text-decoration: none;
     color: white;
     text-transform: capitalize;
     padding: 40px;
+    vertical-align: middle;
+
     
 }
 main :nth-child(1){
@@ -48,6 +59,8 @@ main :nth-child(4){
 h2 {
     text-align: left;
     margin-top: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold ;
 }
 p {
     height: 270px;
@@ -55,10 +68,11 @@ p {
     overflow:scroll;
     margin-left :30px;
     text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+    font-style: italic;
 }
 main :nth-last-child(4){
     float: left;
-    width: calc(480/50);
     margin-right: 30px;
     margin-left: 41px;
     margin-top: 30px;
@@ -74,7 +88,11 @@ button {
     display: inline;
     padding: 10px 20px;
     float: left;
-
+  }
+  button :hover {
+      background-color: rgb(69,69,69);
+      color: black;
+  
   }
 footer {
     background-color: rgb(69,69,69);
